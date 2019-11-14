@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="PrograFinal.Agregar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PrograFinal"
+             mc:Ignorable="d" 
+             d:DesignHeight="270" d:DesignWidth="457">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Agregar elemento" VerticalAlignment="Top"/>
+        <RadioButton Name="rbtnPelicula" Content="Película" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Checked="RbtnPelicula_Checked"/>
+        <RadioButton Name="rbtnSerie" Content="Serie" HorizontalAlignment="Left" Margin="74,31,0,0" VerticalAlignment="Top" Checked="RbtnSerie_Checked"/>
+        <Grid Name="grdDatos" HorizontalAlignment="Left" Height="209" Margin="10,51,0,0" VerticalAlignment="Top" Width="437"/>
+        
+    </Grid>
+</UserControl>
