@@ -5,24 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PrograFinal"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Background="Bisque">
     <Grid>
-        <ListView HorizontalAlignment="Left" Height="270" Margin="20,20,0,0" VerticalAlignment="Top" Width="300">
+        <ListView Name="lstDatos" HorizontalAlignment="Left" Height="270" Margin="20,20,0,0" VerticalAlignment="Top" Width="300" SelectionChanged="LstDatos_SelectionChanged">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Nombre" Width="200"/>
-                    <GridViewColumn Header="Año" Width="95"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Titulo}" Header="Nombre" Width="200"/>
+                    <GridViewColumn DisplayMemberBinding="{Binding Año}" Header="Año" Width="95"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <Grid Name="grdVisualizar" HorizontalAlignment="Left" Height="270" Margin="325,20,0,0" VerticalAlignment="Top" Width="450"/>
-        <Button Name="btnTituloAZ" Content="A-Z" HorizontalAlignment="Left" Margin="20,300,0,0" VerticalAlignment="Top" Width="140"/>
-        <Button Name="btnTituloZA" Content="Z-A" HorizontalAlignment="Left" Margin="20,325,0,0" VerticalAlignment="Top" Width="140"/>
-        <Button Name="btnAñoMm" Content="Año mayor a menor" HorizontalAlignment="Left" Margin="165,300,0,0" VerticalAlignment="Top" Width="155"/>
-        <Button Name="btnAñomM" Content="Año menor a mayor" HorizontalAlignment="Left" Margin="165,325,0,0" VerticalAlignment="Top" Width="155"/>
-        <Button Name="btnAgregarElemento" Content="Agregar elemento" HorizontalAlignment="Left" Margin="663,300,0,0" VerticalAlignment="Top" Width="112" Click="BtnAgregarElemento_Click"/>
-        <Button Name="btnGuardar" Visibility="Hidden" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="355,300,0,0" VerticalAlignment="Top" Width="145"/>
+        <Button Name="btnTituloAZ" Content="A-Z" HorizontalAlignment="Left" Margin="20,300,0,0" VerticalAlignment="Top" Width="140" Click="BtnTituloAZ_Click"/>
+        <Button Name="btnTituloZA" Content="Z-A" HorizontalAlignment="Left" Margin="20,325,0,0" VerticalAlignment="Top" Width="140" Click="BtnTituloZA_Click"/>
+        <Button Name="btnAñoMm" Content="Año menor a mayor" HorizontalAlignment="Left" Margin="5,349,0,0" VerticalAlignment="Top" Width="155" Click="BtnAñoMm_Click"/>
+        <Button Name="btnAñomM2" Content="Año mayor a menor" HorizontalAlignment="Left" Margin="5,373,0,0" VerticalAlignment="Top" Width="155" Click="BtnAñomM_Click2"/>
+        <Button Name="btnAgregarElemento" Content="Agregar elemento" HorizontalAlignment="Left" Margin="184,300,0,0" VerticalAlignment="Top" Width="112" Click="BtnAgregarElemento_Click"/>
+        <Button Name="btnActualizarElemento" Visibility="Hidden" Content="Actualizar elemento" HorizontalAlignment="Left" Margin="355,300,0,0" VerticalAlignment="Top" Width="115" Click="BtnActualizarElemento_Click"/>
         <Button Name="btnCancelar" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" Margin="535,300,0,0" VerticalAlignment="Top" Width="65" Click="BtnCancelar_Click"/>
+        <Button Name="btnGuardarElemento" Visibility="Hidden" Content="Guardar nuevo elemento" HorizontalAlignment="Left" Margin="335,300,0,0" VerticalAlignment="Top" Width="145" Click="btnGuardarElemento_Click"/>
+        <Button Name="btnEditarElemento" Visibility="Hidden" Content="Habilitar edición" HorizontalAlignment="Left" Margin="335,330,0,0" VerticalAlignment="Top" Width="105" Click="BtnEditarElemento_Click"/>
+        <Button Name="btnEliminarElemento" Visibility="Hidden" Content="Eliminar elemento" HorizontalAlignment="Left" Margin="445,330,0,0" VerticalAlignment="Top" Width="105" Click="BtnEliminarElemento_Click"/>
 
     </Grid>
 </Window>

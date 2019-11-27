@@ -24,19 +24,24 @@ namespace PrograFinal
         {
             InitializeComponent();
             rbtnPelicula.IsChecked = true;
-            grdDatos.Children.Add(new DatosPelicula());
         }
 
         private void RbtnPelicula_Checked(object sender, RoutedEventArgs e)
         {
-            grdDatos.Children.Clear();
-            grdDatos.Children.Add(new DatosPelicula());
+            if (rbtnPelicula.IsChecked == true)
+            {
+                l_Temporadas.Visibility = Visibility.Hidden;
+                tb_Temporadas.Visibility = Visibility.Hidden;
+            }
         }
 
         private void RbtnSerie_Checked(object sender, RoutedEventArgs e)
         {
-            grdDatos.Children.Clear();
-            grdDatos.Children.Add(new DatosSerie());
+            if (rbtnSerie.IsChecked == true)
+            {
+                l_Temporadas.Visibility = Visibility.Visible;
+                tb_Temporadas.Visibility = Visibility.Visible;
+            }
         }
     }
 }

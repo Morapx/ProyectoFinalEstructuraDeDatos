@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PrograFinal"
              mc:Ignorable="d" 
-             d:DesignHeight="209" d:DesignWidth="437">
+             d:DesignHeight="209" d:DesignWidth="437" Background="Bisque">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Título:" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="61,9,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
@@ -13,12 +13,12 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="61,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,66,0,0" TextWrapping="Wrap" Text="Director:" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="61,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" Text="Género:" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="61,93,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,123,0,0" TextWrapping="Wrap" Text="Sinópsis:" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="79" Margin="61,120,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366"/>
-        <TextBlock HorizontalAlignment="Left" Margin="194,13,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="240,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23"/>
+        <TextBlock HorizontalAlignment="Left" Margin="221,50,0,0" TextWrapping="Wrap" Text="Género:" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="268,50,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,93,0,0" TextWrapping="Wrap" Text="Sinópsis:" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="91" Margin="61,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="366"/>
+        <TextBlock HorizontalAlignment="Left" Margin="225,13,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="268,9,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23"/>
 
     </Grid>
 </UserControl>

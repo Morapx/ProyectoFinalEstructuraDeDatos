@@ -5,12 +5,33 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PrograFinal"
              mc:Ignorable="d" 
-             d:DesignHeight="270" d:DesignWidth="457">
+             d:DesignHeight="270" d:DesignWidth="457" Background="Bisque">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Agregar elemento" VerticalAlignment="Top"/>
-        <RadioButton Name="rbtnPelicula" Content="Película" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Checked="RbtnPelicula_Checked"/>
-        <RadioButton Name="rbtnSerie" Content="Serie" HorizontalAlignment="Left" Margin="74,31,0,0" VerticalAlignment="Top" Checked="RbtnSerie_Checked"/>
-        <Grid Name="grdDatos" HorizontalAlignment="Left" Height="209" Margin="10,51,0,0" VerticalAlignment="Top" Width="437"/>
-        
+        <RadioButton Name="rbtnPelicula" Content="Película" HorizontalAlignment="Left" Margin="78,31,0,0" VerticalAlignment="Top" Checked="RbtnPelicula_Checked"/>
+        <RadioButton Name="rbtnSerie" Content="Serie" HorizontalAlignment="Left" Margin="173,31,0,0" VerticalAlignment="Top" Checked="RbtnSerie_Checked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,62,0,0" TextWrapping="Wrap" Text="Título:" VerticalAlignment="Top"/>
+        <TextBox Name="tb_Nombre" HorizontalAlignment="Left" Height="23" Margin="78,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,90,0,0" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top"/>
+        <TextBox Name="tb_Año" HorizontalAlignment="Left" Height="23" Margin="78,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,118,0,0" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top"/>
+        <TextBox Name="tb_Productor" HorizontalAlignment="Left" Height="23" Margin="78,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="260,121,0,0" TextWrapping="Wrap" Text="Género:" VerticalAlignment="Top"/>
+        <ComboBox Name="cb_Genero" HorizontalAlignment="Left" Margin="307,121,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Comedia</ComboBoxItem>
+            <ComboBoxItem>Miedo</ComboBoxItem>
+            <ComboBoxItem>Aventura</ComboBoxItem>
+            <ComboBoxItem>Suspenso</ComboBoxItem>
+            <ComboBoxItem>Acción</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,148,0,0" TextWrapping="Wrap" Text="Descripción:" VerticalAlignment="Top"/>
+        <TextBox Name="tb_Descripcion" HorizontalAlignment="Left" Height="94" Margin="79,148,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="349"/>
+        <TextBlock Name="l_Rating" HorizontalAlignment="Left" Margin="266,68,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top"/>
+        <TextBox Name="tb_Rating" HorizontalAlignment="Left" Height="23" Margin="308,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23"/>
+        <TextBlock Name="l_Temporadas" HorizontalAlignment="Left" Margin="236,96,0,0" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_Temporadas" HorizontalAlignment="Left" Height="23" Margin="308,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="23"/>
+
+
+
     </Grid>
 </UserControl>

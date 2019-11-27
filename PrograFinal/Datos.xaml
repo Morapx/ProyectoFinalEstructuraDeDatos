@@ -5,22 +5,37 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PrograFinal"
              mc:Ignorable="d" 
-             d:DesignHeight="270" d:DesignWidth="450">
+             d:DesignHeight="270" d:DesignWidth="450" Background="Bisque">
     <Grid>
         <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Visualizar elemento" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,42,0,0" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top"/>
         <TextBlock Name="lTipo" HorizontalAlignment="Left" Margin="54,42,0,0" TextWrapping="Wrap" Text="Ejemplo" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,72,0,0" TextWrapping="Wrap" Text="Título:" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="48,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="392"/>
+        <TextBox Name="tb_Nombre" HorizontalAlignment="Left" Height="23" Margin="48,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="392"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,105,0,0" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="48,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="76"/>
+        <TextBox Name="tb_Año" HorizontalAlignment="Left" Height="23" Margin="48,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="76"/>
         <TextBlock HorizontalAlignment="Left" Margin="166,105,0,0" TextWrapping="Wrap" Text="Género:" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="212,103,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="cb_Genero" HorizontalAlignment="Left" Margin="212,103,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>Comedia</ComboBoxItem>
+            <ComboBoxItem>Espanto</ComboBoxItem>
+            <ComboBoxItem>Aventura</ComboBoxItem>
+            <ComboBoxItem>Suspenso</ComboBoxItem>
+            <ComboBoxItem>Acción</ComboBoxItem>
+        </ComboBox>
         <TextBlock Name="lProductorDirector" HorizontalAlignment="Left" Margin="10,140,0,0" TextWrapping="Wrap" Text="Director:" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="70,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
-        <TextBlock HorizontalAlignment="Left" Margin="205,143,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top"/>
+        <TextBox Name="tb_Director" HorizontalAlignment="Left" Height="42" Margin="70,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="130"/>
+        <TextBlock Name="l_Rating" HorizontalAlignment="Left" Margin="205,143,0,0" TextWrapping="Wrap" Text="Rating:" VerticalAlignment="Top"/>
+        <TextBox Name="tb_Rating" HorizontalAlignment="Left" Height="23" Margin="247,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="38"/>
         <TextBlock Name="lDesSinop" HorizontalAlignment="Left" Margin="10,189,0,0" TextWrapping="Wrap" Text="Descripción:" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="73" Margin="79,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+        <TextBox Name="tb_Descipcion" HorizontalAlignment="Left" Height="73" Margin="79,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="361"/>
+        <TextBlock x:Name="l_Temporadas" HorizontalAlignment="Left" Margin="293,143,0,0" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb_Temporadas" HorizontalAlignment="Left" Height="23" Margin="365,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="38"/>
+        <Image Name="e1" Visibility="Hidden" Margin="269,10,10,221" Source="1.png" Stretch="Fill"/>
+        <Image Name="e2" Visibility="Hidden" Margin="269,10,10,221" Source="2.png" Stretch="Fill"/>
+        <Image Name="e3" Visibility="Hidden" Margin="269,10,10,221" Source="3.png" Stretch="Fill"/>
+        <Image Name="e4" Visibility="Hidden" Margin="269,10,10,221" Source="4.png" Stretch="Fill"/>
+        <Image Name="e5" Visibility="Hidden" Margin="269,10,10,221" Source="5.png" Stretch="Fill"/>
+        <Label Name="novalido" Visibility="Hidden" Content="Número de estrellas no valido" HorizontalAlignment="Left" Margin="274,10,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </UserControl>
